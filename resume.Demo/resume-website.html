@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Александра Усольцева | Frontend-разработчик</title>
+    <style>
+        :root {
+            --primary-color: #1f5bff;
+            --secondary-color: #f5f5f5;
+            --dark-color: #212121;
+            --text-color: #333;
+            --light-text: #6e6e6e;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            position: relative;
+            color: var(--dark-color);
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-color);
+            margin-top: 15px;
+        }
+        
+        .hero {
+            background-color: var(--secondary-color);
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+        
+        .profile-img {
+            width: 800px;
+            height: 400px;
+            border-radius: 5%;
+            object-fit: cover;
+            border: 5px solid var(--white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .hero-description {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            color: var(--light-text);
+        }
+        
+        .about {
+            background-color: var(--white);
+        }
+        
+        .skills {
+            background-color: var(--secondary-color);
+        }
+        
+        .skills-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-item {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .skill-icon {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .divider {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .divider-line {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #ddd, transparent);
+            margin: 20px auto;
+            max-width: 200px;
+        }
+        
+        .divider-text {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .contact {
+            background-color: var(--dark-color);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .contact-title {
+            color: var(--white);
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <img src="IMG_8692.jpeg.webp" alt="Александр Усольцев" class="profile-img">
+            <h1 class="hero-title">Александр Усольцев</h1>
+            <h2 class="hero-subtitle">Начинающий Frontend-разработчик</h2>
+            <p class="hero-description">
+                Начинающий Frontend-разработчик с базовыми знаниями HTML, CSS и JavaScript, стремлюсь развиваться в создании современных и адаптивных веб-интерфейсов. Ищу возможность работать в команде, где смогу применять свои навыки и учиться у опытных разработчиков.
+            </p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div style="max-width: 800px;">
+                <p style="font-size: 1.2rem; margin-bottom: 20px; color: var(--light-text);">
+                    - Готовность к обучению и работе в команде.<br>
+                    - Умение работать с документацией.<br>
+                    - Личные качества: внимательность, усидчивость, ответственность.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Профессиональные навыки</h2>
+            <ul class="skills-list">
+                <li class="skill-item">
+                    <div class="skill-icon">✓</div>
+                    <div>
+                        <h3>HTML5 & CSS3</h3>
+                        <p>Верстка адаптивных и семантических страниц</p>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">✓</div>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Основы программирования</p>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">✓</div>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>Базовое понимание системы контроля версий</p>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">✓</div>
+                    <div>
+                        <h3>Figma</h3>
+                        <p>Знаком с инструментом для дизайна</p>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">✓</div>
+                    <div>
+                        <h3>Командная работа</h3>
+                        <p>Легко работаю в команде</p>
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <div class="skill-icon">✓</div>
+                    <div>
+                        <h3>Мотивация</h3>
+                        <p>Хочу связать свою жизнь с фронтенд-разработкой</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="divider">
+        <div class="container">
+            <div class="divider-line"></div>
+            <p class="divider-text">Открыт к предложениям на стажировку и junior позициям</p>
+            <div class="divider-line"></div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title contact-title">Контакты</h2>
+            <p class="contact-info">Я живу в Томске. <br>
+                Готов работать и учиться удаленно</p>
+            <p class="contact-info">Телефон: <a href="tel:+71234567891">+7-123-456-78-90</a></p>
+            <p class="contact-info">Email: <a href="mailto:resume.Demo@pochta.com">resume.Demo@pochta.com</a></p>
+        </div>
+    </section>
+</body>
+</html>
